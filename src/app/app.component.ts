@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { InfoPaginaService } from './services/info-pagina.service';
+import { ProductosService } from './services/productos.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { InfoPaginaService } from './services/info-pagina.service';
 export class AppComponent {
   title = 'Oscar Angular';
 
-  constructor(public infoPaginaService: InfoPaginaService ){
+  constructor(public infoPaginaService: InfoPaginaService, public productosServide: ProductosService ){
 
   }
 }
